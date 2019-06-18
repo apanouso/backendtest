@@ -89,7 +89,16 @@ curl -i -POST http://localhost:8086/query --data-urlencode "q=CREATE DATABASE my
 
 To check whether the launch of the application is successful open an internet browser and type `localhost:8081/'
 
-![](docs/images/spark-cluster/example_cluster.png)
+![](docs/apprunning.png)
+
+
+* The results are written in the database using the following schema:
+
+ 
+name: measurements
+time               | sensor ID (tag)| anomaly score (tag) | value of sensor entry (field) |
+-------------------|----------------|---------------------|-------------------------------|
+2017-01-01T00:00:00Z|       1        |        0.5  		 |       215.304292299079        |
 
 
 * For shutting down the cluster: Open a command terminal and type:
