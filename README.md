@@ -94,11 +94,8 @@ To check whether the launch of the application is successful open an internet br
 
 * The results are written in the database using the following schema:
 
- 
-name: measurements
-time               | sensor ID (tag)| anomaly score (tag) | value of sensor entry (field) |
--------------------|----------------|---------------------|-------------------------------|
-2017-01-01T00:00:00Z|       1        |        0.5  		 |       215.304292299079        |
+[{"name":"measurements","columns":["time","anomalyScore","sensorId","value"], e.g.
+[2017-01-01T00:00:00Z, "0.5", "1","215.304292299079"]
 
 
 * For shutting down the cluster: Open a command terminal and type:
